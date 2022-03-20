@@ -1,0 +1,21 @@
+name: Pull check
+on:
+  pull_request:
+  push:
+    branches: master
+
+jobs:
+
+  code-check:
+    name: Code check
+    runs-on: ubuntu-latest
+    steps:
+    
+    - name: Setup
+      uses: bgdshka/echart-component/.github/actions/setup@master
+
+    - name: Unit testing
+      uses: bgdshka/echart-component/.github/actions/unit-and-snapshots@master
+
+    - name: Screenshots
+      uses: bgdshka/echart-component/.github/actions/screenshots@master
