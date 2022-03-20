@@ -12,10 +12,10 @@ jobs:
     steps:
     
     - name: Setup
-      uses: bgdshka/echart-component/.github/actions/setup@master
+      uses: bgdshka/echart-component-viteshot/.github/actions/setup@master
 
     - name: Unit testing
-      uses: bgdshka/echart-component/.github/actions/unit-and-snapshots@master
+      uses: bgdshka/echart-component-viteshot/.github/actions/unit-and-snapshots@master
 
     - name: Screenshots
-      uses: bgdshka/echart-component/.github/actions/screenshots@master
+      uses: bgdshka/echart-component-viteshot/.github/actions/screenshots@master
