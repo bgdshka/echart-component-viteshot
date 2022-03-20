@@ -8,3 +8,4 @@ yarn test
 yarn test:screenshot
 
 
+Деплой - https://echart-component-viteshot.surge.sh/
